@@ -12,3 +12,5 @@ RoxygenNote: 7.3.2
 Depends: 
     R (>= 3.5)
 LazyData: true
+URL: https://github.com/natanast/EuroleagueBasketball
+BugReports: https://github.com/natanast/EuroleagueBasketball/issues

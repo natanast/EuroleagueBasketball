@@ -1,6 +1,6 @@
 Package: EuroleagueBasketball
 Title: EuroLeague Basketball Dataset for Analysis and Visualization
-Version: 0.0.0.9000
+Version: 1.0.0
 Authors@R: 
     person("Natasa", "Anastasiadou", , "anastasidounat@gmail.com", role = c("aut", "cre"))
 Description: Provides a clean and structured dataset containing statistics

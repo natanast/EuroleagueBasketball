@@ -1,16 +1,17 @@
 Package: EuroleagueBasketball
-Title: What the Package Does (One Line, Title Case)
+Title: EuroLeague Basketball Dataset for Analysis and Visualization
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Natasa", "Anastasiadou", , "anastasidounat@gmail.com", role = c("aut", "cre"))
+Description: Provides a clean and structured dataset containing statistics
+    and metadata related to EuroLeague Basketball games, players, and
+    teams.
+License: MIT + file LICENSE
+URL: https://github.com/natanast/EuroleagueBasketball
+BugReports: https://github.com/natanast/EuroleagueBasketball/issues
 Encoding: UTF-8
+LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 Depends: 
     R (>= 3.5)
-LazyData: true
-URL: https://github.com/natanast/EuroleagueBasketball
-BugReports: https://github.com/natanast/EuroleagueBasketball/issues

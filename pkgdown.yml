@@ -1,0 +1,34 @@
+home:
+  title: EuroleagueBasketball
+  tagline: EuroLeague Basketball Data Package
+
+navbar:
+  structure:
+    left:
+      - home
+      - reference
+      - articles
+    right:
+      - github
+  components:
+    github:
+      icon: fa-github
+      href: https://github.com/natanast/EuroleagueBasketball
+
+reference:
+  - title: Dataset
+    contents:
+      - euroleague_stats
+
+articles:
+  - title: Getting Started
+    contents:
+      - euroleague-overview
+
+template:
+  bootstrap: 5
+  bootswatch: flatly
+
+authors:
+  - name: Natasa Anastasiadou
+    href: https://github.com/natanast

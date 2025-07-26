@@ -24,15 +24,16 @@ template:
     primary: "#003366"
     secondary: "#BED4E2"
     link-color: "#437597"
-    info: "#BED4E2"
+    info: "#295466"
     headings-color: "#336688"
-    navbar-bg: "#fcfbf9"
-    navbar-light-color: "#272b30"
-    navbar-light-hover-color: "#336688"
+    navbar-bg: "#295466"
+    navbar-light-color: "#ffffff"
+    navbar-light-hover-color: "#BED4E2"
+  extra_css: "pkgdown/extra.css"
 
 navbar:
   type: light
-  bg: "#fcfbf9"
+  bg: "#295466"
   structure:
     left: [home, intro, reference, articles]
     right: [github]

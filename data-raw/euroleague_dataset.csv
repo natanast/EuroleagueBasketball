@@ -1,24 +1,24 @@
-Team,Home city,Arena,Capacity,Season,Last season,Country,FinalFour_Appearances,Titles_Won,Years_of_FinalFour_Appearances,Years_of_Titles_Won
-ALBA Berlin,Berlin,Uber Arena,"14,500[19]",18th,18th,Germany,0,0,,
-Anadolu Efes,Istanbul,Basketball Development Center,"10,000[20]",7th,10th,Turkey,5,2,"2000, 2001, 2019, 2021, 2022","2021, 2022"
-Baskonia,Vitoria-Gasteiz,Buesa Arena,"15,431[22]",15th,8th,Spain,0,0,,
-Bayern Munich,Munich,SAP Garden,"12,500[23]",4th,15th,Germany,0,0,,
-Crvena zvezda Meridianbet,Belgrade,Belgrade Arena,"18,386[24]",9th,16th,Serbia,0,0,,
-Crvena zvezda Meridianbet,Belgrade,Aleksandar Nikolić Hall,"8,000[25]",9th,16th,Serbia,0,0,,
-FC Barcelona,Barcelona,Palau Blaugrana,"7,585[21]",10th,6th,Spain,17,2,"1989, 1990, 1991, 1994, 1996, 1997, 2000, 2003, 2006, 2009, 2010, 2012, 2013, 2014, 2021, 2022, 2023","2003, 2010"
-Fenerbahçe,Istanbul,Ülker Sports and Event Hall,"13,000[27]",5th,4th,Turkey,6,1,"2015, 2016, 2017, 2018, 2019, 2024",2017
-LDLC ASVEL,D�cines-Charpieu,LDLC Arena,"12,523[28]",13th,17th,France,0,0,,
-LDLC ASVEL,Villeurbanne,Astroballe,"5,556[29]",13th,17th,France,0,0,,
-Maccabi Tel Aviv,Tel Aviv,Aleksandar Nikolić Hall,"8,000[30][31]",17th,7th,Israel,12,5,"1988, 1989, 1991, 2000, 2001, 2002, 2004, 2005, 2006, 2008, 2011, 2014","2001, 2004, 2005, 2014"
-Monaco,Monaco,Salle Gaston Médecin,"4,090[32]",2nd,5th,Monaco,1,0,2023,None
-Olimpia Milano,Milan,Unipol Forum,"12,700[26]",11th,12th,Italy,4,0,"1992, 2021",None
-Olympiacos,Piraeus,Peace and Friendship Stadium,"12,300[33]",3rd,,Greece,13,3,"1994, 1995, 1997, 1999, 2009, 2010, 2012, 2013, 2015, 2017, 2022, 2023, 2024","1997, 2012, 2013"
-Panathinaikos,Athens,OAKA Altion,"18,300[34]",6th,,Greece,12,7,"1994, 1995, 1996, 2000, 2001, 2002, 2005, 2007, 2009, 2011, 2012, 2024","1996, 2000, 2002, 2007, 2009, 2011, 2024"
-Paris Basketball,Paris,Adidas Arena,"8,000[35]",1st,(EuroCup),France,0,0,,
-Paris Basketball,Paris,Accor Arena,"15,705[36]",1st,(EuroCup),France,0,0,,
-Partizan,Belgrade,Belgrade Arena,"18,386[37]",14th,11th,Serbia,3,1,"1988, 1992, 1998, 2010",1992
-Partizan,Belgrade,Aleksandar Nikolić Hall,"8,000[38]",14th,11th,Serbia,3,1,"1988, 1992, 1998, 2010",1992
-Real Madrid,Madrid,Movistar Arena,"15,000[39]",12th,,Spain,12,6,"1995, 1996, 2011, 2013, 2014, 2015, 2017, 2018, 2019, 2022, 2023, 2024","1995, 2015, 2018, 2023"
-Virtus Bologna,Bologna,Virtus Segafredo Arena,"9,980[40]",16th,9th,Italy,5,2,"1998, 1999, 2001, 2002, 2004","1998, 2001, 2002"
-Virtus Bologna,Bologna,Unipol Arena,"8,278[41]",16th,9th,Italy,5,2,"1998, 1999, 2001, 2002, 2004","1998, 2001, 2002"
-Žalgiris,Kaunas,Žalgirio Arena,"15,415[42]",8th,14th,Lithuania,2,1,"1999, 2018",1999
+Team,Home city,Arena,Capacity,Last season,Country,FinalFour_Appearances,Titles_Won,Years_of_FinalFour_Appearances,Years_of_Titles_Won
+Anadolu Efes,Istanbul,Basketball Development Center,"10,000[19]",6th,Turkey,5,2,"2000, 2001, 2019, 2021, 2022","2021, 2022"
+Baskonia,Vitoria-Gasteiz,Buesa Arena,"15,431[21]",14th,Spain,0,0,"",""
+Bayern Munich,Munich,SAP Garden,"11,500[22]",9th,Germany,0,0,"",""
+Crvena zvezda Meridianbet,Belgrade,Belgrade Arena,"18,386[23]",10th,Serbia,0,0,"",""
+Dubai Basketball,Dubai,Coca-Cola Arena,"17,000",—,,0,0,"",""
+FC Barcelona,Barcelona,Palau Blaugrana,"7,585[20]",5th,Spain,17,2,"1989, 1990, 1991, 1994, 1996, 1997, 2000, 2003, 2006, 2009, 2010, 2012, 2013, 2014, 2021, 2022, 2023","2003, 2010"
+Fenerbahçe,Istanbul,Ülker Sports and Event Hall,"13,000[25]","",Turkey,7,2,"2015, 2016, 2017, 2018, 2019, 2024, 2025","2017, 2025"
+Hapoel IBI Tel Aviv,Tel Aviv,"","",(EuroCup),,0,0,"",""
+LDLC ASVEL,Décines-Charpieu,LDLC Arena,"12,523[26]",15th,France,0,0,"",""
+LDLC ASVEL,Villeurbanne,Astroballe,"5,556[27]",15th,France,0,0,"",""
+Maccabi Tel Aviv,Tel Aviv,"","",16th,Israel,12,5,"1988, 1989, 1991, 2000, 2001, 2002, 2004, 2005, 2006, 2008, 2011, 2014","2001, 2004, 2005, 2014"
+Monaco,Monaco,Salle Gaston Médecin,"5,000[28][29][30][31]","",Monaco,2,0,"2023, 2025",None
+Olimpia Milano,Milan,Unipol Forum,"12,700[24]",11th,Italy,4,0,"1992, 2021",None
+Olympiacos,Piraeus,Peace and Friendship Stadium,"12,300[32]","",Greece,14,3,"1994, 1995, 1997, 1999, 2009, 2010, 2012, 2013, 2015, 2017, 2022, 2023, 2024, 2025","1997, 2012, 2013"
+Panathinaikos,Athens,OAKA Altion,"18,300[33]",4th,Greece,13,7,"1994, 1995, 1996, 2000, 2001, 2002, 2005, 2007, 2009, 2011, 2012, 2024, 2025","1996, 2000, 2002, 2007, 2009, 2011, 2024"
+Paris Basketball,Paris,Adidas Arena,"8,000[34]",8th,France,0,0,"",""
+Paris Basketball,Paris,Accor Arena,"15,705[35]",8th,France,0,0,"",""
+Partizan,Belgrade,Belgrade Arena,"18,386[36]",12th,Serbia,3,1,"1988, 1992, 1998, 2010",1992
+Real Madrid,Madrid,Movistar Arena,"15,000[37]",7th,Spain,12,6,"1995, 1996, 2011, 2013, 2014, 2015, 2017, 2018, 2019, 2022, 2023, 2024","1995, 2015, 2018, 2023"
+Valencia Basket,Valencia,Roig Arena,"15,600",(EuroCup),,0,0,"",""
+Virtus Bologna,Bologna,Virtus Arena,"9,980[38]",17th,Italy,5,2,"1998, 1999, 2001, 2002, 2004","1998, 2001, 2002"
+Virtus Bologna,Bologna,PalaDozza,"5,570[39]",17th,Italy,5,2,"1998, 1999, 2001, 2002, 2004","1998, 2001, 2002"
+Žalgiris,Kaunas,Žalgirio Arena,"15,415[40]",13th,Lithuania,2,1,"1999, 2018",1999

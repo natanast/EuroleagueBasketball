@@ -18,9 +18,9 @@ euroleague_finals <- "data-raw/data.xlsx" |> readxl::read_xlsx()
 
 # clean data -----
 
-# first dataset 
+# first dataset
 euroleague <- euroleague |>
-    html_elements(".wikitable.sortable") |> 
+    html_elements(".wikitable.sortable") |>
     html_table()
 
 
@@ -66,4 +66,4 @@ euroleague_basketball$Years_of_Titles_Won <- ifelse(is.na(euroleague_basketball$
 
 
 # save dataset
-# data.table::fwrite(euroleague_basketball, file = "euroleague_dataset.csv")
+data.table::fwrite(euroleague_basketball, file = "euroleague_dataset.csv")

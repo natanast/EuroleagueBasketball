@@ -2,6 +2,8 @@ home:
   title: EuroleagueBasketball
   tagline: EuroLeague Basketball Data Package
 
+url: https://natanast.github.io/EuroleagueBasketball/
+
 navbar:
   structure:
     left:
@@ -18,7 +20,7 @@ navbar:
 reference:
   - title: Dataset
     contents:
-      - euroleague_stats
+      - euroleague_basketball
 
 articles:
   - title: Getting Started
@@ -28,6 +30,9 @@ articles:
 template:
   bootstrap: 5
   bootswatch: flatly
+  bslib:
+  primary: "#003366"  # Custom primary color (Euroleague blue)
+  base_font: {google: "Roboto"}  # Use a Google font
 
 authors:
   - name: Natasa Anastasiadou

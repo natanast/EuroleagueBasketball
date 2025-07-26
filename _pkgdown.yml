@@ -25,14 +25,14 @@ reference:
 articles:
   - title: Getting Started
     contents:
-      - euroleague-overview
+      - euroleague-visualizations
 
 template:
   bootstrap: 5
   bootswatch: flatly
   bslib:
-  primary: "#003366"  # Custom primary color (Euroleague blue)
-  base_font: {google: "Roboto"}  # Use a Google font
+    primary: "#003366"  # Custom primary color (Euroleague blue)
+    base_font: {google: "Roboto"}  # Use a Google font
 
 authors:
   - name: Natasa Anastasiadou

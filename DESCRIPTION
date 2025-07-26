@@ -1,9 +1,11 @@
 Package: EuroleagueBasketball
-Title: What the Package Does (One Line, Title Case)
+Title: EuroLeague Basketball Data Package
 Version: 2.0.0
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+    person("Natasa", "Anastasiadou", , "anastasiadounat@gmail.com", role = c("aut", "cre"))
+Description: rovides EuroLeague Basketball team and player statistics, including
+    historical results, titles, Final Four appearances, and other performance data.
+    Includes built-in datasets and visualizations for exploring EuroLeague trends.
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
 Encoding: UTF-8

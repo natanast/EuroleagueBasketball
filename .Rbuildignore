@@ -3,3 +3,6 @@
 ^data-raw$
 ^EuroleagueBasketball\.Rproj$
 ^LICENSE\.md$
+^docs$
+^_pkgdown\.yml$
+^pkgdown$

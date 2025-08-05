@@ -28,7 +28,7 @@ df1 <- euroleague[[1]] |> setDT()
 
 
 team_mapping <- c(
-    "Barcelona" = "FC Barcelona",
+    "Barça" = "FC Barcelona",
     "EA7 Emporio Armani Milan" = "Olimpia Milano",
     "Fenerbahçe Beko" = "Fenerbahçe",
     "Maccabi Playtika Tel Aviv" = "Maccabi Tel Aviv",
@@ -57,6 +57,10 @@ euroleague_basketball[Team == "Bayern Munich", Country := "Germany"]
 euroleague_basketball[Team == "Crvena zvezda Meridianbet", Country := "Serbia"]
 euroleague_basketball[Team == "LDLC ASVEL", Country := "France"]
 euroleague_basketball[Team == "Paris Basketball", Country := "France"]
+euroleague_basketball[Team == "Valencia Basket", Country := "Spain"]
+euroleague_basketball[Team == "Dubai Basketball", Country := "United Arab Emirates"]
+euroleague_basketball[Team == "Maccabi Rapyd Tel Aviv", Country := "Israel"]
+euroleague_basketball[Team == "Hapoel IBI Tel Aviv", Country := "Israel"]
 
 
 euroleague_basketball$FinalFour_Appearances <- ifelse(is.na(euroleague_basketball$FinalFour_Appearances), "0", euroleague_basketball$FinalFour_Appearances)
@@ -69,6 +73,7 @@ euroleague_basketball$Years_of_Titles_Won <- ifelse(is.na(euroleague_basketball$
 euroleague_basketball[Team == "Olympiacos", `Last season` := "3rd"]
 euroleague_basketball[Team == "Monaco", `Last season` := "2nd"]
 euroleague_basketball[Team == "Fenerbahçe", `Last season` := "1st"]
+
 
 
 # save dataset

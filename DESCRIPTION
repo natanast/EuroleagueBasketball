@@ -3,18 +3,18 @@ Title: EuroLeague Basketball Data Package
 Version: 2.0.0
 Authors@R: 
     person("Natasa", "Anastasiadou", , "anastasiadounat@gmail.com", role = c("aut", "cre"))
-Description: rovides EuroLeague Basketball team and player statistics, including
+Description: Provides EuroLeague Basketball team and player statistics, including
     historical results, titles, Final Four appearances, and other performance data.
     Includes built-in datasets and visualizations for exploring EuroLeague trends.
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
-Suggests: 
-    knitr,
-    rmarkdown
-VignetteBuilder: knitr
 Depends: 
     R (>= 3.5)
+Suggests: 
+    knitr,
+    rmarkdown,
+    ggplot2
+VignetteBuilder: knitr
 LazyData: true

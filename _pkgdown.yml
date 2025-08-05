@@ -16,9 +16,9 @@ template:
     base_font:
       google: "Jost"
     code_font:
-      google: "Overpass Mono"
+      google: "Jost"
     heading_font:
-      google: "Abhaya Libre"
+      google: "Jost"
     bg: "#fcfbf9"
     fg: "#231F20"
     primary: "#003366"

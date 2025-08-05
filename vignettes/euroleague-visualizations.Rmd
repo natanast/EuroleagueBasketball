@@ -15,7 +15,6 @@ knitr::opts_chunk$set(
 ```
 
 ```{r setup}
-
 library(EuroleagueBasketball)
 library(ggplot2)
 library(ggrepel)
@@ -33,13 +32,16 @@ dt <- as.data.table(euroleague_basketball)
 dt[, Titles_Won_num := as.numeric(Titles_Won)]
 dt[, FinalFour_num := as.numeric(FinalFour_Appearances)]
 
+labels <- dt[FinalFour_Appearances > 0]
 
 # Plot
 ggplot(dt, aes(x = Titles_Won_num, y = FinalFour_num)) +
     
+    
     geom_point(color = "#295466", size = 3) +
     
     geom_text_repel(
+        data = labels,
         aes(label = Team),
         size = 3
     ) +
@@ -50,8 +52,22 @@ ggplot(dt, aes(x = Titles_Won_num, y = FinalFour_num)) +
         y = "Final Four Appearances"
      ) +
     
-  theme_minimal(base_family = "Candara")
-
+    theme_minimal(base_family = "Candara") +
+    
+    theme(
+        panel.grid.major = element_line(linewidth = 0.45, color = "grey85", lineend = "round"),
+        panel.grid.minor = element_line(
+            linewidth = 0.35, 
+            color = "grey85", 
+            linetype = "dashed", 
+            lineend = "round"
+        ),
+        
+        plot.margin = margin(20, 20, 20, 20),
+        
+        plot.background = element_rect(fill = "grey93", color = NA)
+    )
+    
 
 
 ```

@@ -3,7 +3,7 @@ Title: EuroLeague Basketball Data Package
 Version: 2.0.0
 Authors@R: 
     person("Natasa", "Anastasiadou", , "anastasiadounat@gmail.com", role = c("aut", "cre"))
-Description: Provides EuroLeague Basketball team and player statistics, including
+Description: Provides EuroLeague Basketball team statistics, including
     historical results, titles, Final Four appearances, and other performance data.
     Includes built-in datasets and visualizations for exploring EuroLeague trends.
 License: MIT + file LICENSE

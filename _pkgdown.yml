@@ -1,34 +1,59 @@
+url: https://natanast.github.io/EuroleagueBasketball/
+
 home:
   title: EuroleagueBasketball
-  tagline: EuroLeague Basketball Data Package
+  description: Data package for EuroLeague Basketball teams, stats, and visualizations.
+
+authors:
+  - name: "Natasa Anastasiadou"
+    href: "https://github.com/natanast"
+
+
+template:
+  bootstrap: 5
+  bslib:
+    font_scale: 1.0
+    base_font:
+      google: "Jost"
+    code_font:
+      google: "Overpass Mono"
+    heading_font:
+      google: "Abhaya Libre"
+    bg: "#fcfbf9"
+    fg: "#231F20"
+    primary: "#003366"
+    secondary: "#BED4E2"
+    link-color: "#437597"
+    info: "#295466"
+    headings-color: "#336688"
+    navbar-bg: "#295466"
+    navbar-light-color: "#ffffff"
+    navbar-light-hover-color: "#BED4E2"
+  extra_css: "pkgdown/extra.css"
 
 navbar:
+  type: light
+  bg: "#295466"
   structure:
-    left:
-      - home
-      - reference
-      - articles
-    right:
-      - github
+    left: [home, intro, reference, articles]
+    right: [github]
   components:
+    intro:
+      text: "Get Started"
+      href: articles/euroleague-visualizations.html
+    articles:
+      text: Articles
+      menu:
+        - text: "Visualizations"
+          href: articles/euroleague-visualizations.html
+        - text: "Historical Stats"
+          href: articles/historical-stats.html
+        - text: "-----"
+        - text: Extras
+        - text: Data Download
+          href: articles/download.html
+
     github:
       icon: fa-github
       href: https://github.com/natanast/EuroleagueBasketball
 
-reference:
-  - title: Dataset
-    contents:
-      - euroleague_stats
-
-articles:
-  - title: Getting Started
-    contents:
-      - euroleague-overview
-
-template:
-  bootstrap: 5
-  bootswatch: flatly
-
-authors:
-  - name: Natasa Anastasiadou
-    href: https://github.com/natanast

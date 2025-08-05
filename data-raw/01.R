@@ -18,9 +18,9 @@ euroleague_finals <- "data-raw/data.xlsx" |> readxl::read_xlsx()
 
 # clean data -----
 
-# first dataset 
+# first dataset
 euroleague <- euroleague |>
-    html_elements(".wikitable.sortable") |> 
+    html_elements(".wikitable.sortable") |>
     html_table()
 
 
@@ -65,5 +65,11 @@ euroleague_basketball$Years_of_FinalFour_Appearances <- ifelse(is.na(euroleague_
 euroleague_basketball$Years_of_Titles_Won <- ifelse(is.na(euroleague_basketball$Years_of_Titles_Won), "", euroleague_basketball$Years_of_Titles_Won)
 
 
+# Fill missing "Last season" values manually
+euroleague_basketball[Team == "Olympiacos", `Last season` := "3rd"]
+euroleague_basketball[Team == "Monaco", `Last season` := "2nd"]
+euroleague_basketball[Team == "Fenerbahçe", `Last season` := "1st"]
+
+
 # save dataset
-# data.table::fwrite(euroleague_basketball, file = "euroleague_dataset.csv")
+data.table::fwrite(euroleague_basketball, file = "euroleague_dataset.csv")

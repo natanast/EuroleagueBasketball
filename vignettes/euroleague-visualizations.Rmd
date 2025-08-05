@@ -1,0 +1,31 @@
+---
+title: "euroleague-visualizations"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{euroleague-visualizations}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(EuroleagueBasketball)
+library(ggplot2)
+```
+
+```{r plot_titles_vs_finalfour, echo=TRUE, fig.width=7, fig.height=5}
+ggplot(euroleague_basketball, aes(x = as.numeric(Titles_Won), y = as.numeric(FinalFour_Appearances))) +
+  geom_point(color = "darkblue", size = 3) +
+  labs(
+    title = "EuroLeague Titles vs Final Four Appearances",
+    x = "Titles Won",
+    y = "Final Four Appearances"
+  ) +
+  theme_minimal()
+```

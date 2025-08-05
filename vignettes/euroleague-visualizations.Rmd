@@ -15,17 +15,43 @@ knitr::opts_chunk$set(
 ```
 
 ```{r setup}
+
 library(EuroleagueBasketball)
 library(ggplot2)
+library(ggrepel)
+library(data.table)
+library(extrafont)
+
 ```
 
 ```{r plot_titles_vs_finalfour, echo=TRUE, fig.width=7, fig.height=5}
-ggplot(euroleague_basketball, aes(x = as.numeric(Titles_Won), y = as.numeric(FinalFour_Appearances))) +
-  geom_point(color = "darkblue", size = 3) +
-  labs(
-    title = "EuroLeague Titles vs Final Four Appearances",
-    x = "Titles Won",
-    y = "Final Four Appearances"
-  ) +
-  theme_minimal()
+
+# Convert to data.table
+dt <- as.data.table(euroleague_basketball)
+
+# Convert columns to numeric
+dt[, Titles_Won_num := as.numeric(Titles_Won)]
+dt[, FinalFour_num := as.numeric(FinalFour_Appearances)]
+
+
+# Plot
+ggplot(dt, aes(x = Titles_Won_num, y = FinalFour_num)) +
+    
+    geom_point(color = "#295466", size = 3) +
+    
+    geom_text_repel(
+        aes(label = Team),
+        size = 3
+    ) +
+    
+    labs(
+        title = "EuroLeague Titles vs Final Four Appearances",
+        x = "Titles Won",
+        y = "Final Four Appearances"
+     ) +
+    
+  theme_minimal(base_family = "Candara")
+
+
+
 ```

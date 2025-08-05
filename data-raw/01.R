@@ -76,5 +76,23 @@ euroleague_basketball[Team == "Fenerbahçe", `Last season` := "1st"]
 
 
 
+# Convert to data.table in case it's not
+setDT(euroleague_basketball)
+
+# Deduplicate: collapse multiple arenas into one row per team
+euroleague_basketball <- euroleague_basketball[, .(
+    `Home city` = unique(`Home city`)[1],
+    Arena = paste(unique(Arena), collapse = ", "),
+    Capacity = paste(unique(Capacity), collapse = ", "),
+    `Last season` = unique(`Last season`)[1],
+    Country = unique(Country)[1],
+    FinalFour_Appearances = unique(FinalFour_Appearances)[1],
+    Titles_Won = unique(Titles_Won)[1],
+    Years_of_FinalFour_Appearances = paste(unique(Years_of_FinalFour_Appearances), collapse = ", "),
+    Years_of_Titles_Won = paste(unique(Years_of_Titles_Won), collapse = ", ")
+), by = Team]
+
+
+
 # save dataset
 data.table::fwrite(euroleague_basketball, file = "euroleague_dataset.csv")

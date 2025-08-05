@@ -15,6 +15,9 @@ Depends:
 Suggests: 
     knitr,
     rmarkdown,
-    ggplot2
+    ggplot2,
+    data.table,
+    extrafont,
+    ggrepel
 VignetteBuilder: knitr
 LazyData: true

@@ -1,4 +1,4 @@
-# Euroleague Basketball
+# Euroleague Basketball  <img src="/inst/www/logo_nobg.png" align="right" width="180" />
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 

@@ -19,7 +19,7 @@ devtools::install_github("natanast/EuroleagueBasketball")
 
 # Load data
 library(EuroleagueBasketball)
-data(package = "EuroleagueBasketball")
+data(euroleague_basketball)
 
 ````
 

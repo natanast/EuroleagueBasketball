@@ -1,4 +1,4 @@
-<img src="man/figures/logo_nobg.png" align="right" width="100" />
+<br> <img src="man/figures/logo_nobg.png" align="right" width="100" />
 
 # Euroleague Basketball <br> <br>
 

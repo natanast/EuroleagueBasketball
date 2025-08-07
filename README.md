@@ -3,7 +3,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ## Overview  
-**EuroleagueBasketball** is an R package that provides data on Euroleague basketball teams, including their home cities, arenas, capacities, and historical performance in the Final Four. The dataset is useful for basketball analysis, sports enthusiasts, and data visualization projects.
+The `euroleague_basketball` dataset includes information sourced from publicly available basketball records and Wikipedia. 
+
+It has been cleaned and structured for easy use in R.
 
 ## Installation  
 You can install the development version of the package directly from GitHub:
@@ -20,6 +22,9 @@ library(EuroleagueBasketball)
 data(package = "EuroleagueBasketball")
 
 ````
+
+## About the data
+**EuroleagueBasketball** is an R package that provides data on Euroleague basketball teams, including their home cities, arenas, capacities, and historical performance in the Final Four. The dataset is useful for basketball analysis, sports enthusiasts, and data visualization projects.
 
 ## Dataset Description  
 The `euroleague_basketball` dataset includes the following columns:

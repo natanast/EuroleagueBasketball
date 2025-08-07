@@ -14,6 +14,11 @@ install.packages("devtools")
 
 # Install the package from GitHub
 devtools::install_github("natanast/EuroleagueBasketball")
+
+# Load data
+library(EuroleagueBasketball)
+data(package = "EuroleagueBasketball")
+
 ````
 
 ## Dataset Description  

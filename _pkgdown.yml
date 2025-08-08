@@ -35,23 +35,15 @@ navbar:
   type: light
   bg: "#295466"
   structure:
-    left: [home, intro, reference, articles]
+    left: [home, reference, articles]
     right: [github]
   components:
-    intro:
-      text: "Get Started"
-      href: articles/euroleague-visualizations.html
     articles:
       text: Articles
       menu:
         - text: "Visualizations"
           href: articles/euroleague-visualizations.html
-        - text: "Historical Stats"
-          href: articles/historical-stats.html
-        - text: "-----"
-        - text: Extras
-        - text: Data Download
-          href: articles/download.html
+
 
     github:
       icon: fa-github

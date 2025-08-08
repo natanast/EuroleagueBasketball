@@ -1,21 +1,24 @@
 ---
 output: github_document
 ---
-<br> <img src="man/figures/logo_nobg.png" align="right" width="100" />
+
+<br> <img src="man/figures/logo_nobg.png" align="right" width="100"/>
 
 # Euroleague Basketball <br> <br>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-## Overview  
-The `euroleague_basketball` dataset includes information sourced from publicly available basketball records and Wikipedia. 
+## Overview
+
+The `euroleague_basketball` dataset includes information sourced from publicly available basketball records and Wikipedia.
 
 It has been cleaned and structured for easy use in R.
 
-## Installation  
+## Installation
+
 You can install the development version of the package directly from GitHub:
 
-```r
+``` r
 # Install devtools if not already installed
 install.packages("devtools")
 
@@ -25,33 +28,35 @@ devtools::install_github("natanast/EuroleagueBasketball")
 # Load data
 library(EuroleagueBasketball)
 data(euroleague_basketball)
+```
 
-````
+## Dataset Description
 
-## About the data
-**EuroleagueBasketball** is an R package that provides data on Euroleague basketball teams, including their home cities, arenas, capacities, and historical performance in the Final Four. The dataset is useful for basketball analysis, sports enthusiasts, and data visualization projects.
-
-## Dataset Description  
 The `euroleague_basketball` dataset includes the following columns:
 
-| **Column**                     | **Description**                                              |
-|---------------------------------|--------------------------------------------------------------|
-| `Team`                          | Name of the basketball team                                  |
-| `Home city`                     | City where the team is based                                  |
-| `Arena`                         | Name of the home arena                                        |
-| `Capacity`                      | Seating capacity of the arena                                |
-| `Season`                        | Current Euroleague season of the team                        |
-| `Last season`                   | Last season the team participated                             |
-| `Country`                       | Country where the team is based                              |
-| `FinalFour_Appearances`         | Number of times the team has reached the Final Four          |
-| `Titles_Won`                    | Number of Euroleague titles won                              |
-| `Years_of_FinalFour_Appearances`| Years when the team reached the Final Four                   |
-| `Years_of_Titles_Won`           | Years when the team won the championship                     |
+| **Column** | **Description** |
+|-------------------------|----------------------------------------------|
+| `Team` | Name of the basketball team |
+| `Home city` | City where the team is based |
+| `Arena` | Name of the home arena |
+| `Capacity` | Seating capacity of the arena |
+| `Season` | Current Euroleague season of the team |
+| `Last season` | Last season the team participated |
+| `Country` | Country where the team is based |
+| `FinalFour_Appearances` | Number of times the team has reached the Final Four |
+| `Titles_Won` | Number of Euroleague titles won |
+| `Years_of_FinalFour_Appearances` | Years when the team reached the Final Four |
+| `Years_of_Titles_Won` | Years when the team won the championship |
+
+## About the data
+
+**EuroleagueBasketball** is an R package that provides data on Euroleague basketball teams, including their home cities, arenas, capacities, and historical performance in the Final Four. The dataset is useful for basketball analysis, sports enthusiasts, and data visualization projects.
 
 Here’s a quick look at the data:
-```{r data-preview, echo=FALSE}
-library(knitr)
+
+```{r data-preview}
+
 library(EuroleagueBasketball)
 
-kable(head(euroleague_basketball))
+head(euroleague_basketball, 5)
 ```

@@ -1,5 +1,5 @@
 
-<br> <img src="man/figures/logo_nobg.png" align="right" width="100" />
+<br> <img src="man/figures/logo_nobg.png" align="right" width="100"/>
 
 # Euroleague Basketball <br> <br>
 
@@ -30,14 +30,6 @@ library(EuroleagueBasketball)
 data(euroleague_basketball)
 ```
 
-## About the data
-
-**EuroleagueBasketball** is an R package that provides data on
-Euroleague basketball teams, including their home cities, arenas,
-capacities, and historical performance in the Final Four. The dataset is
-useful for basketball analysis, sports enthusiasts, and data
-visualization projects.
-
 ## Dataset Description
 
 The `euroleague_basketball` dataset includes the following columns:
@@ -56,13 +48,37 @@ The `euroleague_basketball` dataset includes the following columns:
 | `Years_of_FinalFour_Appearances` | Years when the team reached the Final Four |
 | `Years_of_Titles_Won` | Years when the team won the championship |
 
+## About the data
+
+**EuroleagueBasketball** is an R package that provides data on
+Euroleague basketball teams, including their home cities, arenas,
+capacities, and historical performance in the Final Four. The dataset is
+useful for basketball analysis, sports enthusiasts, and data
+visualization projects.
+
 Here’s a quick look at the data:
 
-| Team | Home city | Arena | Capacity | Last season | Country | FinalFour_Appearances | Titles_Won | Years_of_FinalFour_Appearances | Years_of_Titles_Won |
-|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|
-| Anadolu Efes | Istanbul | Basketball Development Center | 10,000\[19\] | 6th | Turkey | 5 | 2 | 2000, 2001, 2019, 2021, 2022 | 2021, 2022 |
-| Baskonia | Vitoria-Gasteiz | Buesa Arena | 15,431\[21\] | 14th | Spain | 0 | 0 |  |  |
-| Bayern Munich | Munich | SAP Garden | 11,500\[22\] | 9th | Germany | 0 | 0 |  |  |
-| Crvena zvezda Meridianbet | Belgrade | Belgrade Arena | 18,386\[23\] | 10th | Serbia | 0 | 0 |  |  |
-| Dubai Basketball | Dubai | Coca-Cola Arena | 17,000 | — | NA | 0 | 0 |  |  |
-| FC Barcelona | Barcelona | Palau Blaugrana | 7,585\[20\] | 5th | Spain | 17 | 2 | 1989, 1990, 1991, 1994, 1996, 1997, 2000, 2003, 2006, 2009, 2010, 2012, 2013, 2014, 2021, 2022, 2023 | 2003, 2010 |
+``` r
+library(EuroleagueBasketball)
+
+head(euroleague_basketball, 5)
+```
+
+    ##                        Team       Home city                         Arena
+    ## 1              Anadolu Efes        Istanbul Basketball Development Center
+    ## 2                  Baskonia Vitoria-Gasteiz                   Buesa Arena
+    ## 3             Bayern Munich          Munich                    SAP Garden
+    ## 4 Crvena zvezda Meridianbet        Belgrade                Belgrade Arena
+    ## 5          Dubai Basketball           Dubai               Coca-Cola Arena
+    ##     Capacity Last season              Country FinalFour_Appearances Titles_Won
+    ## 1 10,000[22]         6th               Turkey                     5          2
+    ## 2 15,431[24]        14th                Spain                     0          0
+    ## 3 11,500[25]         9th              Germany                     0          0
+    ## 4 18,386[26]        10th               Serbia                     0          0
+    ## 5     17,000           — United Arab Emirates                     0          0
+    ##   Years_of_FinalFour_Appearances Years_of_Titles_Won
+    ## 1   2000, 2001, 2019, 2021, 2022          2021, 2022
+    ## 2                                                   
+    ## 3                                                   
+    ## 4                                                   
+    ## 5

@@ -82,11 +82,6 @@
 <span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">euroleague_basketball</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
-<h2 id="about-the-data">About the data<a class="anchor" aria-label="anchor" href="#about-the-data"></a>
-</h2>
-<p><strong>EuroleagueBasketball</strong> is an R package that provides data on Euroleague basketball teams, including their home cities, arenas, capacities, and historical performance in the Final Four. The dataset is useful for basketball analysis, sports enthusiasts, and data visualization projects.</p>
-</div>
-<div class="section level2">
 <h2 id="dataset-description">Dataset Description<a class="anchor" aria-label="anchor" href="#dataset-description"></a>
 </h2>
 <p>The <code>euroleague_basketball</code> dataset includes the following columns:</p>
@@ -146,107 +141,34 @@
 </tr>
 </tbody>
 </table>
+</div>
+<div class="section level2">
+<h2 id="about-the-data">About the data<a class="anchor" aria-label="anchor" href="#about-the-data"></a>
+</h2>
+<p><strong>EuroleagueBasketball</strong> is an R package that provides data on Euroleague basketball teams, including their home cities, arenas, capacities, and historical performance in the Final Four. The dataset is useful for basketball analysis, sports enthusiasts, and data visualization projects.</p>
 <p>Here’s a quick look at the data:</p>
-<table style="width:100%;" class="table">
-<colgroup>
-<col width="10%">
-<col width="10%">
-<col width="10%">
-<col width="10%">
-<col width="10%">
-<col width="10%">
-<col width="10%">
-<col width="10%">
-<col width="10%">
-<col width="10%">
-</colgroup>
-<thead><tr>
-<th align="left">Team</th>
-<th align="left">Home city</th>
-<th align="left">Arena</th>
-<th align="left">Capacity</th>
-<th align="left">Last season</th>
-<th align="left">Country</th>
-<th align="left">FinalFour_Appearances</th>
-<th align="left">Titles_Won</th>
-<th align="left">Years_of_FinalFour_Appearances</th>
-<th align="left">Years_of_Titles_Won</th>
-</tr></thead>
-<tbody>
-<tr>
-<td align="left">Anadolu Efes</td>
-<td align="left">Istanbul</td>
-<td align="left">Basketball Development Center</td>
-<td align="left">10,000[19]</td>
-<td align="left">6th</td>
-<td align="left">Turkey</td>
-<td align="left">5</td>
-<td align="left">2</td>
-<td align="left">2000, 2001, 2019, 2021, 2022</td>
-<td align="left">2021, 2022</td>
-</tr>
-<tr>
-<td align="left">Baskonia</td>
-<td align="left">Vitoria-Gasteiz</td>
-<td align="left">Buesa Arena</td>
-<td align="left">15,431[21]</td>
-<td align="left">14th</td>
-<td align="left">Spain</td>
-<td align="left">0</td>
-<td align="left">0</td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Bayern Munich</td>
-<td align="left">Munich</td>
-<td align="left">SAP Garden</td>
-<td align="left">11,500[22]</td>
-<td align="left">9th</td>
-<td align="left">Germany</td>
-<td align="left">0</td>
-<td align="left">0</td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Crvena zvezda Meridianbet</td>
-<td align="left">Belgrade</td>
-<td align="left">Belgrade Arena</td>
-<td align="left">18,386[23]</td>
-<td align="left">10th</td>
-<td align="left">Serbia</td>
-<td align="left">0</td>
-<td align="left">0</td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Dubai Basketball</td>
-<td align="left">Dubai</td>
-<td align="left">Coca-Cola Arena</td>
-<td align="left">17,000</td>
-<td align="left">—</td>
-<td align="left">NA</td>
-<td align="left">0</td>
-<td align="left">0</td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">FC Barcelona</td>
-<td align="left">Barcelona</td>
-<td align="left">Palau Blaugrana</td>
-<td align="left">7,585[20]</td>
-<td align="left">5th</td>
-<td align="left">Spain</td>
-<td align="left">17</td>
-<td align="left">2</td>
-<td align="left">1989, 1990, 1991, 1994, 1996, 1997, 2000, 2003, 2006, 2009, 2010, 2012, 2013, 2014, 2021, 2022, 2023</td>
-<td align="left">2003, 2010</td>
-</tr>
-</tbody>
-</table>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">EuroleagueBasketball</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">euroleague_basketball</span>, <span class="fl">5</span><span class="op">)</span></span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="do">##                        Team       Home city                         Arena</span></span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="do">## 1              Anadolu Efes        Istanbul Basketball Development Center</span></span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a><span class="do">## 2                  Baskonia Vitoria-Gasteiz                   Buesa Arena</span></span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a><span class="do">## 3             Bayern Munich          Munich                    SAP Garden</span></span>
+<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a><span class="do">## 4 Crvena zvezda Meridianbet        Belgrade                Belgrade Arena</span></span>
+<span id="cb3-6"><a href="#cb3-6" tabindex="-1"></a><span class="do">## 5          Dubai Basketball           Dubai               Coca-Cola Arena</span></span>
+<span id="cb3-7"><a href="#cb3-7" tabindex="-1"></a><span class="do">##     Capacity Last season              Country FinalFour_Appearances Titles_Won</span></span>
+<span id="cb3-8"><a href="#cb3-8" tabindex="-1"></a><span class="do">## 1 10,000[22]         6th               Turkey                     5          2</span></span>
+<span id="cb3-9"><a href="#cb3-9" tabindex="-1"></a><span class="do">## 2 15,431[24]        14th                Spain                     0          0</span></span>
+<span id="cb3-10"><a href="#cb3-10" tabindex="-1"></a><span class="do">## 3 11,500[25]         9th              Germany                     0          0</span></span>
+<span id="cb3-11"><a href="#cb3-11" tabindex="-1"></a><span class="do">## 4 18,386[26]        10th               Serbia                     0          0</span></span>
+<span id="cb3-12"><a href="#cb3-12" tabindex="-1"></a><span class="do">## 5     17,000           — United Arab Emirates                     0          0</span></span>
+<span id="cb3-13"><a href="#cb3-13" tabindex="-1"></a><span class="do">##   Years_of_FinalFour_Appearances Years_of_Titles_Won</span></span>
+<span id="cb3-14"><a href="#cb3-14" tabindex="-1"></a><span class="do">## 1   2000, 2001, 2019, 2021, 2022          2021, 2022</span></span>
+<span id="cb3-15"><a href="#cb3-15" tabindex="-1"></a><span class="do">## 2                                                   </span></span>
+<span id="cb3-16"><a href="#cb3-16" tabindex="-1"></a><span class="do">## 3                                                   </span></span>
+<span id="cb3-17"><a href="#cb3-17" tabindex="-1"></a><span class="do">## 4                                                   </span></span>
+<span id="cb3-18"><a href="#cb3-18" tabindex="-1"></a><span class="do">## 5</span></span></code></pre></div>
 </div>
 </div>
 

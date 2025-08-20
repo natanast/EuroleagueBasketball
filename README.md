@@ -56,6 +56,3 @@ capacities, and historical performance in the Final Four. The dataset is
 useful for basketball analysis, sports enthusiasts, and data
 visualization projects.
                                           
-    ## 3                                                   
-    ## 4                                                   
-    ## 5

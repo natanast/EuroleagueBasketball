@@ -55,30 +55,7 @@ Euroleague basketball teams, including their home cities, arenas,
 capacities, and historical performance in the Final Four. The dataset is
 useful for basketball analysis, sports enthusiasts, and data
 visualization projects.
-
-Here’s a quick look at the data:
-
-``` r
-library(EuroleagueBasketball)
-
-head(euroleague_basketball, 5)
-```
-
-    ##                        Team       Home city                         Arena
-    ## 1              Anadolu Efes        Istanbul Basketball Development Center
-    ## 2                  Baskonia Vitoria-Gasteiz                   Buesa Arena
-    ## 3             Bayern Munich          Munich                    SAP Garden
-    ## 4 Crvena zvezda Meridianbet        Belgrade                Belgrade Arena
-    ## 5          Dubai Basketball           Dubai               Coca-Cola Arena
-    ##     Capacity Last season              Country FinalFour_Appearances Titles_Won
-    ## 1 10,000[22]         6th               Turkey                     5          2
-    ## 2 15,431[24]        14th                Spain                     0          0
-    ## 3 11,500[25]         9th              Germany                     0          0
-    ## 4 18,386[26]        10th               Serbia                     0          0
-    ## 5     17,000           — United Arab Emirates                     0          0
-    ##   Years_of_FinalFour_Appearances Years_of_Titles_Won
-    ## 1   2000, 2001, 2019, 2021, 2022          2021, 2022
-    ## 2                                                   
+                                          
     ## 3                                                   
     ## 4                                                   
     ## 5

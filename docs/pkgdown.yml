@@ -3,7 +3,7 @@ pkgdown: 2.1.3
 pkgdown_sha: ~
 articles:
   euroleague-visualizations: euroleague-visualizations.html
-last_built: 2025-08-07T12:45Z
+last_built: 2025-08-26T07:05Z
 urls:
   reference: https://natanast.github.io/EuroleagueBasketball/reference
   article: https://natanast.github.io/EuroleagueBasketball/articles

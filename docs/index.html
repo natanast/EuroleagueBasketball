@@ -33,16 +33,11 @@
 
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto">
-<li class="nav-item"><a class="nav-link" href="articles/euroleague-visualizations.html">Get Started</a></li>
 <li class="nav-item"><a class="nav-link" href="reference/index.html">Reference</a></li>
 <li class="nav-item dropdown">
   <button class="nav-link dropdown-toggle" type="button" id="dropdown-articles" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Articles</button>
   <ul class="dropdown-menu" aria-labelledby="dropdown-articles">
 <li><a class="dropdown-item" href="articles/euroleague-visualizations.html">Visualizations</a></li>
-    <li><a class="dropdown-item" href="articles/historical-stats.html">Historical Stats</a></li>
-    <li><hr class="dropdown-divider"></li>
-    <li><h6 class="dropdown-header" data-toc-skip>Extras</h6></li>
-    <li><a class="dropdown-item" href="articles/download.html">Data Download</a></li>
   </ul>
 </li>
       </ul>
@@ -82,18 +77,13 @@
 <span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">euroleague_basketball</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
-<h2 id="about-the-data">About the data<a class="anchor" aria-label="anchor" href="#about-the-data"></a>
-</h2>
-<p><strong>EuroleagueBasketball</strong> is an R package that provides data on Euroleague basketball teams, including their home cities, arenas, capacities, and historical performance in the Final Four. The dataset is useful for basketball analysis, sports enthusiasts, and data visualization projects.</p>
-</div>
-<div class="section level2">
 <h2 id="dataset-description">Dataset Description<a class="anchor" aria-label="anchor" href="#dataset-description"></a>
 </h2>
 <p>The <code>euroleague_basketball</code> dataset includes the following columns:</p>
 <table class="table">
 <colgroup>
-<col width="34%">
-<col width="65%">
+<col width="50%">
+<col width="50%">
 </colgroup>
 <thead><tr>
 <th><strong>Column</strong></th>
@@ -146,16 +136,11 @@
 </tr>
 </tbody>
 </table>
-<p>Here’s a quick look at the data:</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">euroleague_basketball</span><span class="op">[</span>, <span class="fu">.</span><span class="op">(</span><span class="va">Team</span>, <span class="va">`Home city`</span>, <span class="va">Arena</span>, <span class="va">Capacity</span>, <span class="va">`Last season`</span>, <span class="va">Country</span>, <span class="va">FinalFour_Appearances</span>, <span class="va">Titles_Won</span><span class="op">)</span><span class="op">]</span><span class="op">)</span></span>
-<span><span class="co">#&gt;                     Team       Home city        Arena                          Capacity     Last season  Country               FinalFour_Appearances Titles_Won</span></span>
-<span><span class="co">#&gt; 1:           Anadolu Efes      Istanbul         Basketball Development Center  10,000[22]    6th         Turkey                  5                      2</span></span>
-<span><span class="co">#&gt; 2:               Baskonia      Vitoria-Gasteiz  Buesa Arena                    15,431[24]   14th         Spain                   0                      0</span></span>
-<span><span class="co">#&gt; 3:          Bayern Munich      Munich           SAP Garden                     11,500[25]    9th         Germany                 0                      0</span></span>
-<span><span class="co">#&gt; 4: Crvena zvezda Meridianbet   Belgrade         Belgrade Arena                 18,386[26]   10th         Serbia                  0                      0</span></span>
-<span><span class="co">#&gt; 5:        Dubai Basketball     Dubai            Coca-Cola Arena                17,000         —          United Arab Emirates    0                      0</span></span>
-<span><span class="co">#&gt; 6:           FC Barcelona      Barcelona        Palau Blaugrana                 7,585[23]    5th         Spain                  17                      2</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="about-the-data">About the data<a class="anchor" aria-label="anchor" href="#about-the-data"></a>
+</h2>
+<p><strong>EuroleagueBasketball</strong> is an R package that provides data on Euroleague basketball teams, including their home cities, arenas, capacities, and historical performance in the Final Four. The dataset is useful for basketball analysis, sports enthusiasts, and data visualization projects.</p>
 </div>
 </div>
 

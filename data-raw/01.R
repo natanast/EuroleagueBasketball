@@ -76,6 +76,11 @@ euroleague_basketball[Team == "Fenerbahçe", `Last season` := "1st"]
 
 
 
+# remove ALL [xx] patterns everywhere in the string
+euroleague_basketball$Capacity <- gsub("\\[[0-9]+\\]", "", euroleague_basketball$Capacity)
+
+
+
 # Convert to data.table in case it's not
 setDT(euroleague_basketball)
 

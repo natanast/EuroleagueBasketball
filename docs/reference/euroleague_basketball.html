@@ -86,45 +86,6 @@ and historical performance (Final Four appearances and titles).</p>
 See <a href="https://en.wikipedia.org/wiki/EuroLeague" class="external-link">https://en.wikipedia.org/wiki/EuroLeague</a> and your package's <code>data-raw/</code> scripts.</p>
     </div>
 
-    <div class="section level2">
-    <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">euroleague_basketball</span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">euroleague_basketball</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                        Team       Home city                         Arena</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1              Anadolu Efes        Istanbul Basketball Development Center</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2                  Baskonia Vitoria-Gasteiz                   Buesa Arena</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3             Bayern Munich          Munich                    SAP Garden</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4 Crvena zvezda Meridianbet        Belgrade                Belgrade Arena</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5          Dubai Basketball           Dubai               Coca-Cola Arena</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6              FC Barcelona       Barcelona               Palau Blaugrana</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>     Capacity Last season              Country FinalFour_Appearances Titles_Won</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1 10,000[22]         6th               Turkey                     5          2</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2 15,431[24]        14th                Spain                     0          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3 11,500[25]         9th              Germany                     0          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4 18,386[26]        10th               Serbia                     0          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5     17,000           — United Arab Emirates                     0          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6  7,585[23]         5th                Spain                    17          2</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                                                                         Years_of_FinalFour_Appearances</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1                                                                         2000, 2001, 2019, 2021, 2022</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2                                                                                                     </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3                                                                                                     </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4                                                                                                     </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5                                                                                                     </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6 1989, 1990, 1991, 1994, 1996, 1997, 2000, 2003, 2006, 2009, 2010, 2012, 2013, 2014, 2021, 2022, 2023</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   Years_of_Titles_Won</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1          2021, 2022</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2                    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3                    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4                    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5                    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6          2003, 2010</span>
-<span class="r-in"><span><span class="co"># Example: teams per country</span></span></span>
-<span class="r-in"><span><span class="co"># if (requireNamespace("dplyr", quietly = TRUE)) {</span></span></span>
-<span class="r-in"><span><span class="co">#   dplyr::count(euroleague_basketball, Country) |&gt;</span></span></span>
-<span class="r-in"><span><span class="co">#     dplyr::arrange(desc(n))</span></span></span>
-<span class="r-in"><span><span class="co"># }</span></span></span>
-</code></pre></div>
-    </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
     </nav></aside></div>
 

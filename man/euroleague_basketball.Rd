@@ -30,13 +30,4 @@ euroleague_basketball
 Cleaned information on Euroleague teams: home cities, arenas, capacities,
 and historical performance (Final Four appearances and titles).
 }
-\examples{
-data(euroleague_basketball)
-head(euroleague_basketball)
-# Example: teams per country
-# if (requireNamespace("dplyr", quietly = TRUE)) {
-#   dplyr::count(euroleague_basketball, Country) |>
-#     dplyr::arrange(desc(n))
-# }
-}
 \keyword{datasets}

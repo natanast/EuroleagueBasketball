@@ -19,13 +19,4 @@
 #'
 #' @source Wikipedia: EuroLeague page; merged with your curated finals file.
 #'   See \url{https://en.wikipedia.org/wiki/EuroLeague} and your package's \code{data-raw/} scripts.
-#'
-#' @examples
-#' data(euroleague_basketball)
-#' head(euroleague_basketball)
-#' # Example: teams per country
-#' # if (requireNamespace("dplyr", quietly = TRUE)) {
-#' #   dplyr::count(euroleague_basketball, Country) |>
-#' #     dplyr::arrange(desc(n))
-#' # }
 "euroleague_basketball"

@@ -40,7 +40,6 @@ The `euroleague_basketball` dataset includes the following columns:
 | `Home city` | City where the team is based |
 | `Arena` | Name of the home arena |
 | `Capacity` | Seating capacity of the arena |
-| `Season` | Current Euroleague season of the team |
 | `Last season` | Last season the team participated |
 | `Country` | Country where the team is based |
 | `FinalFour_Appearances` | Number of times the team has reached the Final Four |
@@ -55,4 +54,3 @@ Euroleague basketball teams, including their home cities, arenas,
 capacities, and historical performance in the Final Four. The dataset is
 useful for basketball analysis, sports enthusiasts, and data
 visualization projects.
-                                          

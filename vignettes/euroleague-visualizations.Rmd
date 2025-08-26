@@ -1,5 +1,5 @@
 ---
-title: "euroleague-visualizations"
+title: "Example visualizations using the euroleague data"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{euroleague-visualizations}
@@ -7,12 +7,18 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
+## Intro
+
+This page demonstrates quick exploratory charts you can build with the `euroleague_basketball` dataset.
+
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
 ```
+
+## Import libraries
 
 ```{r setup}
 library(EuroleagueBasketball)
@@ -22,6 +28,18 @@ library(data.table)
 library(extrafont)
 
 ```
+
+## Peek at the data
+
+```{r}
+
+head(EuroleagueBasketball::euroleague_basketball[, .(Team, Country, `Home city`, Arena, Capacity,
+                                                     FinalFour_Appearances, Titles_Won)])
+
+
+```
+
+## Titles vs Final Four Appearances
 
 ```{r plot_titles_vs_finalfour, echo=TRUE, fig.width=7, fig.height=5}
 
@@ -71,3 +89,5 @@ ggplot(dt, aes(x = Titles_Won_num, y = FinalFour_num)) +
 
 
 ```
+
+*Takeaway:* Teams with many Final Four appearances aren’t always those with the most titles. For example, some teams are consistent contenders but rarely convert appearances into championships.

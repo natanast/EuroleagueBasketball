@@ -21,3 +21,4 @@ Suggests:
     ggrepel
 VignetteBuilder: knitr
 LazyData: true
+URL: https://natanast.github.io/EuroleagueBasketball/

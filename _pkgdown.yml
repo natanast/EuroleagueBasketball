@@ -1,20 +1,20 @@
 url: https://natanast.github.io/EuroleagueBasketball/
+
 home:
   title: EuroleagueBasketball
   description: Data package for EuroLeague Basketball teams, stats, and visualizations.
+
 authors:
 - name: Natasa Anastasiadou
   href: https://github.com/natanast
+
 template:
   bootstrap: 5
   bslib:
     font_scale: 1.0
-    base_font:
-      google: Jost
-    code_font:
-      google: Jost
-    heading_font:
-      google: Jost
+    base_font: { google: Jost }
+    code_font: { google: Jost }
+    heading_font: { google: Jost }
     bg: '#fcfbf9'
     fg: '#231F20'
     primary: '#003366'
@@ -22,10 +22,11 @@ template:
     link-color: '#437597'
     info: '#295466'
     headings-color: '#336688'
-    navbar-bg: '#295466'
-    navbar-light-color: '#ffffff'
-    navbar-light-hover-color: '#BED4E2'
+    navbar-bg: '#295466'     # navbar background color
+    navbar-fg: '#ffffff'     # navbar text/icons color
+    navbar-hover-color: '#BED4E2'
   extra_css: pkgdown/extra.css
+
 navbar:
   type: light
   bg: '#295466'
@@ -44,4 +45,3 @@ navbar:
     github:
       icon: fa-github
       href: https://github.com/natanast/EuroleagueBasketball
-

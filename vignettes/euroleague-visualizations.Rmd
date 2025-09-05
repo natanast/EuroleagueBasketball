@@ -28,6 +28,7 @@ library(stringr)
 library(data.table)
 library(ggtext)
 library(extrafont)
+library(scales)
 
 ```
 
@@ -145,9 +146,9 @@ ggplot(df_plot, aes(x = Capacity_num, y = Team)) +
     ) +
 
     geom_text(
-        aes(label = scales::comma(Capacity_num)),
+        aes(label = comma(Capacity_num)),
         nudge_x = 1250,
-        size = 3.5,
+        size = 3,
         vjust = -0.35
     ) +
 
@@ -155,6 +156,8 @@ ggplot(df_plot, aes(x = Capacity_num, y = Team)) +
         values = rev(col)
     ) +
 
+    scale_x_continuous(labels = comma) +
+    
     labs(
         title = "Home Arena Capacities of EuroLeague Teams",
         x = "Capacity",

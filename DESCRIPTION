@@ -18,7 +18,10 @@ Suggests:
     ggplot2,
     data.table,
     extrafont,
-    ggrepel
+    ggrepel,
+    stringr,
+    ggtext,
+    scales
 VignetteBuilder: knitr
 LazyData: true
 URL: https://natanast.github.io/EuroleagueBasketball/

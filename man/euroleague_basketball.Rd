@@ -5,18 +5,18 @@
 \alias{euroleague_basketball}
 \title{Euroleague Basketball Teams Data}
 \format{
-A data frame with the following variables:
+A data.table with 20 rows and 12 variables:
 \describe{
-\item{Team}{Basketball team name (character).}
-\item{\verb{Home city}}{City where the team is based (character).}
-\item{Arena}{Arena(s) used by the team (character).}
-\item{Capacity}{Seating capacity; kept as a character with commas (e.g., "10,000").}
-\item{\verb{Last season}}{Team placement in the most recent completed season (character).}
-\item{Country}{Country where the team is located (character).}
-\item{FinalFour_Appearances}{Number of Final Four appearances (character, as scraped/cleaned).}
-\item{Titles_Won}{Number of Euroleague titles won (character, as scraped/cleaned).}
-\item{Years_of_FinalFour_Appearances}{Comma-separated years of Final Four appearances (character).}
-\item{Years_of_Titles_Won}{Comma-separated years of titles (character).}
+\item{Team}{Character. Team name.}
+\item{\verb{Home city}}{Character. Home city.}
+\item{Arena}{Character. Arena(s) used.}
+\item{Capacity}{Character. Stated capacity (may contain multiple values).}
+\item{\verb{Last season}}{Character. Last EuroLeague season finish.}
+\item{Country}{Character. Country.}
+\item{FinalFour_Appearances}{Character. Number of Final Four appearances.}
+\item{Titles_Won}{Character. Number of EuroLeague titles.}
+\item{Years_of_FinalFour_Appearances}{Character. Years of Final Four appearances (comma-separated).}
+\item{Years_of_Titles_Won}{Character. Years of titles (comma-separated).}
 }
 }
 \source{

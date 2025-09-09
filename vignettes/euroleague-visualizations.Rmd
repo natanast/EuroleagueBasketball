@@ -147,7 +147,7 @@ ggplot(df_plot, aes(x = Capacity_num, y = Team)) +
     geom_text(
         aes(label = scales::comma(Capacity_num)),
         nudge_x = 1250,
-        size = 2,
+        size = 2.5,
         vjust = -0.35
     ) +
 
@@ -170,9 +170,9 @@ ggplot(df_plot, aes(x = Capacity_num, y = Team)) +
 
         axis.title.y = element_blank(),
 
-        axis.title.x = element_text(size = 10),
+        axis.title.x = element_text(size = 11),
 
-        axis.text = element_text(size = 8),
+        axis.text = element_text(size = 9),
 
         legend.position = "none",
 

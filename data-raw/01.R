@@ -2,6 +2,8 @@
 rm(list = ls())
 gc()
 
+
+
 # libraries -----
 
 library(rvest)
@@ -53,6 +55,7 @@ missing_countries <- c("Germany", "Turkey", "Spain", "Serbia", "Israel", "Monaco
 # Add the missing countries to the 'Country' column based on the team names
 euroleague_basketball[Team == "ALBA Berlin", Country := "Germany"]
 euroleague_basketball[Team == "Baskonia", Country := "Spain"]
+euroleague_basketball[Team == "Barcelona", Country := "Spain"]
 euroleague_basketball[Team == "Bayern Munich", Country := "Germany"]
 euroleague_basketball[Team == "Crvena zvezda Meridianbet", Country := "Serbia"]
 euroleague_basketball[Team == "LDLC ASVEL", Country := "France"]
@@ -61,7 +64,7 @@ euroleague_basketball[Team == "Valencia Basket", Country := "Spain"]
 euroleague_basketball[Team == "Dubai Basketball", Country := "United Arab Emirates"]
 euroleague_basketball[Team == "Maccabi Rapyd Tel Aviv", Country := "Israel"]
 euroleague_basketball[Team == "Hapoel IBI Tel Aviv", Country := "Israel"]
-
+euroleague_basketball[Team == "Virtus Olidata Bologna", Country := "Italy"]
 
 euroleague_basketball$FinalFour_Appearances <- ifelse(is.na(euroleague_basketball$FinalFour_Appearances), "0", euroleague_basketball$FinalFour_Appearances)
 euroleague_basketball$Titles_Won <- ifelse(is.na(euroleague_basketball$Titles_Won), "0", euroleague_basketball$Titles_Won)

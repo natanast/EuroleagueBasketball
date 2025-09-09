@@ -123,7 +123,7 @@ df_plot[, Team := factor(Team, levels = unique(Team))]
 
 col = c('#033342', '#124150', '#224f5e', '#325d6d', 
         '#426b7b', '#527a8b', '#62899a', '#7199aa', 
-        '#81a8ba', '#91b8cb',  '#e88982', '#db7771', 
+        '#81a8ba', '#91b8cb', '#ffa49c', '#e88982', '#db7771', 
         '#cd6560', '#bf5350', '#ae4343', '#9d3336', 
         '#8c2229', '#7a121c', '#67000e')
 
@@ -147,7 +147,7 @@ ggplot(df_plot, aes(x = Capacity_num, y = Team)) +
     geom_text(
         aes(label = scales::comma(Capacity_num)),
         nudge_x = 1250,
-        size = 3,
+        size = 2,
         vjust = -0.35
     ) +
 
@@ -170,16 +170,16 @@ ggplot(df_plot, aes(x = Capacity_num, y = Team)) +
 
         axis.title.y = element_blank(),
 
-        axis.title.x = element_text(size = 12),
+        axis.title.x = element_text(size = 10),
 
-        axis.text = element_text(size = 10),
+        axis.text = element_text(size = 8),
 
         legend.position = "none",
 
         panel.grid.major = element_line(color = "grey75", linetype = "dashed", lineend = "round"),
         panel.grid.minor = element_blank(),
 
-        plot.title = element_markdown(size = 16, face = "bold", hjust = 0.5, margin = margin(t = 2, b = 15)),
+        plot.title = element_markdown(size = 14, face = "bold", hjust = 0.5, margin = margin(t = 2, b = 15)),
 
         plot.margin = margin(20, 20, 20, 20),
 

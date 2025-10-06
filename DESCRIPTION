@@ -4,24 +4,29 @@ Version: 2.0.0
 Authors@R: 
     person("Natasa", "Anastasiadou", , "anastasiadounat@gmail.com", role = c("aut", "cre"))
 Description: Provides EuroLeague Basketball team statistics, including
-    historical results, titles, Final Four appearances, and other performance data.
-    Includes built-in datasets and visualizations for exploring EuroLeague trends.
+    historical results, titles, Final Four appearances, and other
+    performance data.  Includes built-in datasets and visualizations for
+    exploring EuroLeague trends.
 License: MIT + file LICENSE
-Encoding: UTF-8
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.3
+URL: https://natanast.github.io/EuroleagueBasketball/,
+    https://github.com/natanast/EuroleagueBasketball/
+BugReports: https://github.com/natanast/EuroleagueBasketball/issues
 Depends: 
     R (>= 3.5)
 Suggests: 
-    knitr,
-    rmarkdown,
-    ggplot2,
     data.table,
     extrafont,
+    ggplot2,
     ggrepel,
-    stringr,
     ggtext,
-    scales
-VignetteBuilder: knitr
+    knitr,
+    rmarkdown,
+    scales,
+    stringr
+VignetteBuilder: 
+    knitr
+Encoding: UTF-8
+Language: en-US
 LazyData: true
-URL: https://natanast.github.io/EuroleagueBasketball/
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3

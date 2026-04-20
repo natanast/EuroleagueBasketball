@@ -18,5 +18,6 @@
 #' }
 #'
 #' @source Wikipedia: EuroLeague page; merged with your curated finals file.
-#'   See \url{https://en.wikipedia.org/wiki/EuroLeague} and your package's \code{data-raw/} scripts.
+#'   See \url{https://en.wikipedia.org/wiki/EuroLeague} and this package's 
+#'   source \code{data-raw/} scripts.
 "euroleague_basketball"
